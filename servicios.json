@@ -3,7 +3,8 @@
     "titulo": "Sesión de Biodescodificación",
     "descripcion": "Descubre qué es la Biodescodificación y cómo puede transformar tu vida: Este método te ayuda a comprender tus patrones mentales arraigados en el pasado que condicionan tu presente.",
     "duracion": "45 min - 1 hora",
-    "precio": "$80.000 (80 USD)"
+    "precio": "$80.000 (80 USD)",
+    "logo": "assets/7.jpg"
   },
 
 
@@ -11,35 +12,40 @@
     "titulo": "Sesión de Memoria Celular",
     "descripcion": "Liberá las memorias emocionales almacenadas en tu cuerpo a través de una sesión de Memoria Celular. Esta terapia te permite acceder a bloqueos inconscientes y transformar desde la raíz lo que hoy te limita. Identificá y saná patrones repetitivos, Soltá emociones atrapadas,  Reconectá con tu verdadero potencial.",
     "duracion": "45 min",
-    "precio": "$80.000 (80 USD)"
+    "precio": "$80.000 (80 USD)",
+    "logo": "assets/8.jpg"
   },
 
   {
     "titulo": "Sesión Psico-espiritual",
     "descripcion": "Un enfoque integral que combina psicología tradicional con perspectivas y técnicas espirituales, ofreciendo una visión completa de tus procesos internos.",
     "duracion": "45 min - 1 hora",
-    "precio": "$100.000 (100 USD)"
+    "precio": "$100.000 (100 USD)",
+    "logo": "assets/9.jpg"
   },
 
     {
     "titulo": "Astrología Psicológica",
     "descripcion": "¡Desbloquea el poder de la Astrología Psicológica para resolver conflictos y encontrar tu rumbo! Incluye carta natal, revolución solar, tránsitos y más.",
     "duracion": "1 hora y media",
-    "precio": "$80.000 (80 USD)"
+    "precio": "$80.000 (80 USD)",
+    "logo": "assets/10.jpg"
   },
 
     {
     "titulo": "Taller de Manifestación Lunar",
     "descripcion": "El propósito del taller es guiar a los participantes en un viaje de autoconocimiento y manifestación conciente, utilizando las energías de las fases lunares y la astrología.",
     "duracion": "Ciclo de 6/12",
-    "precio": "$25.000 (25 USD)"
+    "precio": "$25.000 (25 USD)",
+    "logo": "assets/11.jpg"
   },
 
     {
     "titulo": "Experencia Sanación",
     "descripcion": "Un encuentro vivencial que invita a la liberación y transformación integral, integrando prácticas de bienestar físico, emocional y espiritual.",
     "duracion": "Encuentros de 5hs *Sujeto a fechas de realización de los encuentros.",
-    "precio": "$60.000 (60 USD)"
+    "precio": "$60.000 (60 USD)",
+    "logo": "assets/12.jpg"
   }
 
 ]

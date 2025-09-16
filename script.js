@@ -21,7 +21,8 @@ fetch("servicios.json")
 
       card.innerHTML = `
         <div class="servicio-header">
-          <div class="servicio-logo"></div>
+          <div class="servicio-logo">
+          <img src="${servicio.logo}" alt="${servicio.titulo}"></div>
           <div class="servicio-titulo">${servicio.titulo}</div>
         </div>
         <div class="servicio-precio">${servicio.precio}</div>
