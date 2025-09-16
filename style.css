@@ -1017,6 +1017,7 @@ select option:hover {
   .hero-text h3 {
     font-size: 1rem;
     margin-bottom: 5px;
+    max-width: 300px;
   }
 
   .hero-buttons {
