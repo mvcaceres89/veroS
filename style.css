@@ -705,7 +705,7 @@ select option:hover {
 .contacto-section {
   background: var(--blanco);
   padding: 60px 20px;
-  height: 100vh;
+  height: auto;      /* deja crecer */
 }
 
 .contacto-section h2 {
@@ -731,7 +731,7 @@ select option:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  height: 50vh;
+  height: auto;
 
 }
 
