@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mas Vero Samaniego</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+<body>
+
+    <!-- Header con logo y navegación -->
+<header class="header">
+  <div class="logo">
+     <a href="#">
+      <img src="assets/logo.png" alt="Logo Vero Samaniego">
+    </a>
+  </div>
+  <nav class="nav">
+    <ul>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#reservar">Agenda</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero principal -->
+<section id="hero">
+  <div class="hero-container">
+    <div class="hero-img">
+      <img src="assets/vero.jpg" alt="Vero Samaniego">
+    </div>
+    <div class="hero-text">
+        
+      <h1>Sanación desde el interior para una transformación real</h1>
+      <h3>A través de la Psicología, la Biodescodificación y la Astrología, liberá lo que te limita, conectá con tu poder interior y abrí paso a tu evolución.</h3>
+      <p class="firma">+ Vero Samaniego</p>
+      <div class="hero-buttons">
+        <a href="#reservar" class="btn btn-primary">Quiero agendar mi sesión</a>
+        <a href="#servicios" class="btn btn-secondary">Ver todos los servicios</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Sobre mí -->
+<section id="sobre-mi" class="sobre-mi-section">
+  <!-- Rectángulo superior con foto de fondo -->
+  <div class="sobre-mi-hero">
+    <h2>+ Vero Samaniego</h2>
+    <p>Sanación profunda, transformación real.</p>
+  </div>
+
+  <!-- Parte inferior con foto y texto -->
+  <div class="sobre-mi-content">
+    <div class="sobre-mi-img">
+      <img src="assets/vero2.jpg" alt="Vero Samaniego">
+    </div>
+    <div class="sobre-mi-text">
+      <p>Soy Vero Samaniego, Licenciada en Psicología y terapeuta holística. A lo largo de más de 10 años, he desarrollado un enfoque integrador que une la psicología tradicional con herramientas como la biodescodificación y la astrología psicológica, acompañando a personas en procesos de sanación emocional, mental, corporal y espiritual.</p>
+      <p>Mi misión es acompañarte en el camino del autoconocimiento y la transformación, ayudándote a identificar y liberar los patrones que hoy limitan tu bienestar, y que muchas veces se manifiestan en forma de malestares físicos, bloqueos emocionales o situaciones repetitivas en tu vida.</p>
+      <p>Desde + Vero Samaniego, ofrezco sesiones personalizadas, programas grupales y experiencias transformadoras diseñadas para que cada persona pueda reconectar con su esencia, sanar desde la raíz y despertar todo su potencial.</p>
+    </div>
+  </div>
+</section>
+<div class="separador"></div>
+  <div class="separador-2"></div>
+  <div class="separador-3"></div>
+
+<!-- Servicios -->
+<section id="servicios" class="servicios-section">
+  <!-- Separadores claros -->
+  
+
+  <div class="servicios-container">
+
+    <h2>Servicios de transformación integral</h2>
+    <p class="subtitulo">Acompaño tu proceso de autoconocimiento y sanación con herramientas que integran mente, cuerpo y espíritu para ayudarte a vivir la vida que deseas.</p>
+
+    <div id="lista-servicios">
+
+   
+    </div>
+  </div>
+</section>
+
+
+<!-- RESERVAR -->
+<section id="reservar" class="reservar-section">
+  <div class="reservar-overlay">
+    <h2>Agenda tu Sesión</h2>
+    <p class="reservar-sub">Selecciona el servicio, fecha y hora que mejor se adapte a tus necesidades y comenzá tu camino hacia el bienestar.</p>
+
+    <!-- CONTADOR DE PASOS -->
+    <div class="steps" role="tablist" aria-label="Progreso de reserva">
+      <div class="step active" data-step="1" role="tab" aria-selected="true">1 <span>Servicio</span></div>
+      <div class="step" data-step="2" role="tab" aria-selected="false">2 <span>Datos</span></div>
+      <div class="step" data-step="3" role="tab" aria-selected="false">3 <span>Pago</span></div>
+      <div class="step" data-step="4" role="tab" aria-selected="false">4 <span>Agenda</span></div>
+    </div>
+
+    <!-- WIZARD -->
+    <div class="wizard">
+
+      <!-- STEP 1: SELECT SERVICE -->
+      <div class="step-panel is-active" data-step="1" aria-hidden="false">
+        <label for="select-servicio" class="label">Seleccioná un servicio</label>
+        <select id="select-servicio" aria-label="Seleccionar servicio">
+          <option value="">Cargando servicios...</option>
+        </select>
+
+        <div id="servicio-resumen" class="servicio-resumen" aria-live="polite" hidden>
+          <!-- se llena dinámicamente -->
+        </div>
+
+        <div class="wizard-actions">
+          <button id="next-1" class="btn btn-primary" disabled>Continuar</button>
+        </div>
+      </div>
+
+      <!-- STEP 2: USER DATA -->
+      <div class="step-panel" data-step="2" aria-hidden="true">
+        <form id="form-datos" onsubmit="return false;">
+          <label for="nombre">Tu nombre</label>
+          <input id="nombre" name="nombre" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="telefono">Teléfono (opcional)</label>
+          <input id="telefono" name="telefono" type="tel">
+
+          <div class="wizard-actions">
+            <button id="back-2" class="btn btn-secondary">Volver</button>
+            <button id="next-2" class="btn btn-primary">Continuar</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- STEP 3: PAYMENT (placeholder) -->
+      <div class="step-panel" data-step="3" aria-hidden="true">
+        <h4>Pago</h4>
+        <p class="muted">Aquí irá la integración de pago (Stripe / MercadoPago / etc.). Por ahora, es un placeholder para confirmar la reserva.</p>
+
+        <div class="payment-placeholder">
+          <label>Monto a pagar</label>
+          <div id="monto-pago" class="monto">—</div>
+
+          <label>Metodo de pago</label>
+          <select id="metodo-pago">
+            <option value="placeholder">Simular pago / confirmar</option>
+          </select>
+        </div>
+
+        <div class="wizard-actions">
+          <button id="back-3" class="btn btn-secondary">Volver</button>
+          <button id="next-3" class="btn btn-primary">Confirmar pago (simulado)</button>
+        </div>
+      </div>
+
+      <!-- STEP 4: SCHEDULING -->
+      <div class="step-panel" data-step="4" aria-hidden="true">
+        <h4>Elegí fecha y hora</h4>
+
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" required>
+
+        <label for="hora">Hora</label>
+        <select id="hora" required>
+          <option value="">Seleccioná una hora</option>
+        </select>
+
+        <div class="wizard-actions">
+          <button id="back-4" class="btn btn-secondary">Volver</button>
+          <button id="confirmar" class="btn btn-primary">Finalizar reserva</button>
+        </div>
+      </div>
+
+    </div> <!-- /.wizard -->
+
+    <!-- resultado -->
+    <div id="resultado-reserva" class="resultado-reserva" hidden></div>
+  </div>
+</section>
+
+<div class="separador"></div>
+  <div class="separador-2"></div>
+  <div class="separador-3"></div>
+
+
+<!-- Contacto -->
+<section id="contacto" class="contacto-section">
+  <h2>¿Querés saber más? Estoy para acompañarte</h2>
+  <p class="contacto-sub">
+    Si tenés dudas, consultas o simplemente querés contarme en qué te puedo ayudar, completá el formulario y me pondré en contacto con vos.
+  </p>
+
+  <div class="contacto-container">
+    <!-- Izquierda -->
+    <div class="contacto-info">
+      <h3>Información de Contacto</h3>
+      <div class="infoitems">
+
+      
+      <div class="info-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <strong>Email</strong>
+          <p>vero@samaniego.com</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-phone"></i>
+        <div>
+          <strong>Teléfono</strong>
+          <p>+54 9 11 23432422</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <strong>Ubicación</strong>
+          <p>Don Torcuato, Pcia de Bs As, Argentina</p>
+        </div>
+      </div>
+      </div>
+
+      <div class="redes">
+        <p>Sígueme en Redes Sociales</p>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- Derecha -->
+    <div class="contacto-form">
+      <h3>Envíame un Mensaje</h3>
+      <form>
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu@email.com" required>
+        <textarea placeholder="¿En qué puedo ayudarte?" required></textarea>
+        <button type="submit" class="btn-enviar">Enviar mensaje</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Columna 1: Logo y descripción -->
+    <div class="footer-col">
+      <img src="assets/logo3.png" alt="Logo Vero Samaniego" class="footer-logo">
+      <p class="footer-text">
+        Psicóloga y terapeuta holística especializada en la conexión mente-cuerpo-espíritu. Ofrezco sesiones online para ayudarte a descubrir y sanar patrones limitantes.
+      </p>
+    </div>
+
+    <!-- Columna 2: Enlaces rápidos -->
+    <div class="footer-col">
+      <h4>Enlaces rápidos</h4>
+      <ul class="footer-links">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#sobre-mi">Sobre Mí</a></li>
+        <li><a href="#reservar">Reservar</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 3: Contacto -->
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <div class="contactofooter">
+      <p>Buenos Aires, Argentina</p>
+      <p>(Sesiones online)</p>
+     
+      <p>vero@samaniego.com</p>
+      <p>+54 (123) 456-789</p>
+       </div>
+    </div>
+
+  </div>
+
+  <!-- Línea de copyright -->
+  <div class="footer-bottom">
+    © 2025 Lic. Vero Samaniego - Todos los derechos reservados
+  </div>
+</footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
